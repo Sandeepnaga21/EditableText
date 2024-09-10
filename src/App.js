@@ -23,7 +23,11 @@ class App extends Component {
             {isClicked ? (
               <p className="text">{searchInput}</p>
             ) : (
-              <input type="search" onChange={this.updateSearchInput} />
+              <input
+                type="text"
+                value={searchInput}
+                onChange={this.updateSearchInput}
+              />
             )}
             <button className="btn" onClick={this.changeEditable} type="button">
               {buttonText}
